@@ -48,6 +48,7 @@ li a {
 
 .hero {
   display: flex;
+  flex-wrap: wrap;
   padding: 40px;
   justify-content: space-around;
   align-items: center;
@@ -58,6 +59,7 @@ li a {
 
 .hero__left {
   max-width: 500px;
+  padding: 20px;
 }
 .hero__heading {
   font-family: Montserrat;
@@ -92,6 +94,108 @@ li a {
   border: 3px dashed #000;
 }
 
+.hero__right {
+  padding: 20px;
+}
 .hero__right img {
-  width: 450px;
+  max-width: 450px;
+  display: block;
+}
+
+@media only screen and (min-device-width: 450px) and (max-device-width: 800px) {
+  .hamburger-icon {
+    order: 1;
+    z-index: 20;
+    cursor: pointer;
+  }
+  .hamburger-icon .line {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background-color: black;
+  }
+  .nav__branding {
+    order: 0;
+  }
+  .nav__branding h2 {
+    margin-left: 0px;
+  }
+  nav ul {
+    transform: "translate(100%)";
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+    width: 50vw;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    list-style: none;
+    gap: 70px;
+    font-weight: 400;
+    align-items: center;
+    text-transform: capitalize;
+    padding-top: 20vh;
+    z-index: 10;
+  }
+  nav {
+    padding: 20px 40px;
+  }
+}
+@media only screen and (min-device-width: 0px) and (max-device-width: 450px) {
+  .hamburger-icon {
+    order: 1;
+    z-index: 20;
+    cursor: pointer;
+  }
+  .hamburger-icon .line {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background-color: black;
+  }
+  .nav__branding {
+    order: 0;
+  }
+  .nav__branding h2 {
+    margin-left: 0px;
+    font-size: 28px;
+  }
+  nav ul {
+    transform: "translate(100%)";
+    position: fixed;
+    background-color: white;
+    height: 100vh;
+    width: 80vw;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    list-style: none;
+    gap: 70px;
+    font-weight: 400;
+    align-items: center;
+    text-transform: capitalize;
+    padding-top: 20vh;
+    z-index: 10;
+  }
+  nav li a {
+    margin-top: 10vh;
+    font-size: 20px;
+  }
+  nav {
+    padding: 20px 40px;
+  }
+  .hero {
+    padding: 10px;
+    text-align: center;
+  }
+  .hero__heading {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  .hero__para {
+    font-size: 18px;
+  }
+  .hero__right img {
+    width: 90vw;
+  }
 }
