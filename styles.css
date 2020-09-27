@@ -24,7 +24,7 @@ nav {
 }
 /* SIX */
 
-#hamburger-6.is-active {
+.is-active {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -142,6 +142,46 @@ li a {
   display: block;
 }
 
+/* why having pets section */
+.whypets {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 70px;
+  background-color: #ff6161;
+  outline: 3px dashed #000000;
+  outline-offset: -26px;
+}
+.whypets__left img {
+  width: 40vw;
+}
+.whypets__content {
+  position: relative;
+  padding: 20px;
+}
+.whypets__content__bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35vw;
+}
+.whypets__heading {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: min(2vw, 27px);
+
+  color: #000000;
+}
+.whypets__content p {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: normal;
+  font-size: min(1.5vw, 15px);
+  margin-bottom: 20px;
+  color: #000000;
+}
 @media only screen and (min-device-width: 450px) and (max-device-width: 800px) {
   .hamburger {
     order: 1;
@@ -193,6 +233,20 @@ li a {
   }
   nav {
     padding: 20px 40px;
+  }
+  .whypets {
+    display: flex;
+    flex-direction: column;
+  }
+  .whypets__heading {
+    font-size: 27px;
+  }
+  .whypets__content p {
+    font-size: 18px;
+  }
+  .whypets__left img {
+    width: 70vw;
+    margin-bottom: 30px;
   }
 }
 @media only screen and (min-device-width: 0px) and (max-device-width: 450px) {
@@ -261,5 +315,22 @@ li a {
   }
   .hero__right img {
     width: 90vw;
+  }
+  .whypets {
+    flex-direction: column;
+    padding: 50px;
+    outline-offset: -26px;
+  }
+  .whypets__heading {
+    font-size: 22px;
+    text-align: center;
+  }
+  .whypets__content p {
+    font-size: 14px;
+    text-align: center;
+  }
+  .whypets__left img {
+    width: 70vw;
+    margin-bottom: 30px;
   }
 }
