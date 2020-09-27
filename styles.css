@@ -121,7 +121,6 @@ li a {
     margin-left: 0px;
   }
   nav ul {
-    transform: "translate(100%)";
     position: fixed;
     background-color: white;
     height: 100vh;
@@ -161,7 +160,7 @@ li a {
     font-size: 28px;
   }
   nav ul {
-    transform: "translate(100%)";
+    transform: translate(100%);
     position: fixed;
     background-color: white;
     height: 100vh;
