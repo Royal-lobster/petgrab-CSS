@@ -182,6 +182,179 @@ li a {
   margin-bottom: 20px;
   color: #000000;
 }
+.trainers {
+  padding: 87px 2vw;
+  background-color: #fff2ac;
+}
+.trainer__container {
+  padding: 40px;
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #fff2ac;
+  border: 3px solid #000;
+}
+.trainers h2 {
+  background-color: #ff6161;
+  padding: 15px 23px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Lora;
+  font-weight: bold;
+  text-align: center;
+  font-size: min(30px, 6vw);
+  color: #000000;
+}
+.trainers__cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4vw;
+}
+.trainers__card {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  background-color: #fff;
+  border: 3px solid #000;
+  position: relative;
+  width: 232px;
+  height: 276px;
+  text-align: center;
+  margin-top: 90px;
+}
+.trainers__card img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.trainers__card h3 {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 21px;
+  color: #000000;
+  margin-bottom: 13px;
+}
+.trainer__position {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+  padding: 26px 0;
+  background-color: #ff6161;
+  color: #fff2ac;
+}
+.trainer__phone {
+  display: inline-block;
+  margin: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: #fff2ac;
+  padding: 15px;
+  color: #000000;
+  border: 2px dashed #000;
+}
+
+.petFood {
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.petFood h2 {
+  border-bottom: 3px solid #ff6161;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 64px;
+  padding: 80px 0 10px;
+  margin-bottom: 20px;
+  width: 90vw;
+}
+.petfood__itemsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 8vw;
+  justify-content: center;
+  gap: 5vw;
+}
+
+.petfood__item {
+  display: flex;
+  position: relative;
+  justify-content: end;
+  align-items: center;
+  background-color: #2b2b2b;
+  border: 3px dashed #fff2ac;
+  height: 155px;
+  width: 470px;
+}
+.petfood__item img {
+  position: absolute;
+  top: 50%;
+  left: -3px;
+  transform: translateY(-50%);
+}
+.petfood__itemDetails {
+  margin-right: 114px;
+}
+.petfood__itemDetails h3 {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+}
+.petfood__item p {
+  font-family: Montserrat;
+  margin-top: 8px;
+  font-size: 16px;
+}
+.petfood__item a {
+  display: inline-block;
+  color: #000;
+  margin-top: 19px;
+  background-color: #fff2ac;
+  padding: 10px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 15px;
+}
+.petFood__btn {
+  display: inline-block;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #ff6161;
+  padding: 14px 20px;
+  margin: 40px 0 60px;
+  text-decoration: none;
+  border: 2px dashed #000;
+}
+footer {
+  padding: 60px;
+  text-align: center;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  background: #2b2b2b;
+  color: white;
+}
 @media only screen and (min-device-width: 450px) and (max-device-width: 800px) {
   .hamburger {
     order: 1;
@@ -332,5 +505,32 @@ li a {
   .whypets__left img {
     width: 70vw;
     margin-bottom: 30px;
+  }
+}
+@media only screen and (min-device-width: 0px) and (max-device-width: 570px) {
+  .petFood h2 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .petfood__item {
+    height: 31vw;
+    width: 80vw;
+  }
+  .petfood__item img {
+    width: 40vw;
+    height: 35vw;
+    left: -3px;
+  }
+  .petfood__itemDetails {
+    margin-right: 20px;
+  }
+  .petfood__itemDetails h3 {
+    font-size: min(24px, 4vw);
+  }
+  .petfood__item p {
+    font-size: min(16px, 3vw);
+  }
+  .petfood__item a {
+    font-size: min(15px, 2.5vw);
   }
 }
