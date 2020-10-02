@@ -307,7 +307,10 @@ li a {
   transform: translateY(-50%);
 }
 .petfood__itemDetails {
-  margin-right: 114px;
+  position: absolute;
+  top: 20px;
+  left: 220px;
+  z-index: 100;
 }
 .petfood__itemDetails h3 {
   font-family: Montserrat;
@@ -522,7 +525,10 @@ footer {
     left: -3px;
   }
   .petfood__itemDetails {
-    margin-right: 20px;
+    position: absolute;
+    top: 3vw;
+    left: 44vw;
+    z-index: 100;
   }
   .petfood__itemDetails h3 {
     font-size: min(24px, 4vw);
